@@ -13,7 +13,7 @@ int main() {
 
     s = 0.0;
 
-    for (int i = 1, z = 1; fabs(1.0 / i > e) ; i += 2, z = -z) {
+    for (int i = 1, z = 1; fabs(1.0 / i) > e ; i += 2, z = -z) {
         s += z * 1.0 / i;
     }
     cout << s;
